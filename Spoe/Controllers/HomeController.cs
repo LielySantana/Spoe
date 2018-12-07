@@ -8,25 +8,26 @@ using Spoe.Models;
 
 namespace Spoe.Controllers
 {
-	public class HomeController : Controller
-	{
-		public IActionResult Index()
-		{
-			return View();
-		}
+    public class HomeController : Controller
+    {
+        public IActionResult Index()
+        {
+            return View();
+        }
 
-		public IActionResult About()
-		{
-			ViewData["Message"] = "Descripcion de la aplicacion";
+        public IActionResult About()
+        {
+            ViewData["Message"] = "Descripcion de la aplicacion";
 
-			return View();
-		}
+            return View();
+        }
 
-		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-		public IActionResult Error()
-		{
-			return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-		}
-	}
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+    }
+}
 
 	

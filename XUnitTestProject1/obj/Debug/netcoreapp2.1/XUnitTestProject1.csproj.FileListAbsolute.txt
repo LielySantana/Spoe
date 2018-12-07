@@ -14,3 +14,22 @@ C:\Users\Liely Santana\source\repos\Spoe\XUnitTestProject1\obj\Debug\netcoreapp2
 C:\Users\Liely Santana\source\repos\Spoe\XUnitTestProject1\obj\Debug\netcoreapp2.1\XUnitTestProject1.AssemblyInfoInputs.cache
 C:\Users\Liely Santana\source\repos\Spoe\XUnitTestProject1\obj\Debug\netcoreapp2.1\XUnitTestProject1.AssemblyInfo.cs
 C:\Users\Liely Santana\source\repos\Spoe\XUnitTestProject1\obj\Debug\netcoreapp2.1\XUnitTestProject1.csproj.CopyComplete
+C:\Repos\Spoe\XUnitTestProject1\bin\Debug\netcoreapp2.1\Spoe.Views.dll
+C:\Repos\Spoe\XUnitTestProject1\bin\Debug\netcoreapp2.1\Spoe.Views.pdb
+C:\Repos\Spoe\XUnitTestProject1\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Repos\Spoe\XUnitTestProject1\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Repos\Spoe\XUnitTestProject1\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Repos\Spoe\XUnitTestProject1\bin\Debug\netcoreapp2.1\XUnitTestProject1.deps.json
+C:\Repos\Spoe\XUnitTestProject1\bin\Debug\netcoreapp2.1\XUnitTestProject1.runtimeconfig.json
+C:\Repos\Spoe\XUnitTestProject1\bin\Debug\netcoreapp2.1\XUnitTestProject1.runtimeconfig.dev.json
+C:\Repos\Spoe\XUnitTestProject1\bin\Debug\netcoreapp2.1\XUnitTestProject1.dll
+C:\Repos\Spoe\XUnitTestProject1\bin\Debug\netcoreapp2.1\Spoe.dll
+C:\Repos\Spoe\XUnitTestProject1\bin\Debug\netcoreapp2.1\Spoe.pdb
+C:\Repos\Spoe\XUnitTestProject1\obj\Debug\netcoreapp2.1\XUnitTestProject1.csprojAssemblyReference.cache
+C:\Repos\Spoe\XUnitTestProject1\obj\Debug\netcoreapp2.1\XUnitTestProject1.csproj.CoreCompileInputs.cache
+C:\Repos\Spoe\XUnitTestProject1\obj\Debug\netcoreapp2.1\XUnitTestProject1.AssemblyInfoInputs.cache
+C:\Repos\Spoe\XUnitTestProject1\obj\Debug\netcoreapp2.1\XUnitTestProject1.AssemblyInfo.cs
+C:\Repos\Spoe\XUnitTestProject1\obj\Debug\netcoreapp2.1\XUnitTestProject1.csproj.CopyComplete
+C:\Repos\Spoe\XUnitTestProject1\bin\Debug\netcoreapp2.1\XUnitTestProject1.pdb
+C:\Repos\Spoe\XUnitTestProject1\obj\Debug\netcoreapp2.1\XUnitTestProject1.dll
+C:\Repos\Spoe\XUnitTestProject1\obj\Debug\netcoreapp2.1\XUnitTestProject1.pdb
