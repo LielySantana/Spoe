@@ -1,0 +1,70 @@
+﻿@model Spoe.Data.Estudiante
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Eliminar</h2>
+
+<h3>¿Seguro que quiere eliminar a este estudiante?</h3>
+<div>
+    <h4>Estudiante</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombres)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nombres)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Apellidos)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Apellidos)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.GradoCursar)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GradoCursar)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreTutor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NombreTutor)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TelefonoTutor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TelefonoTutor)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Direccion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Direccion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Documentos)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Documentos)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Fecha)
+        </dd>
+        
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Volver</a>
+    </form>
+</div>

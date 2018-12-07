@@ -1,0 +1,31 @@
+﻿body {
+	background: url(/images/looogo.png) gray;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar {
+	background-color: #218dab;
+	border-color: #218dab;
+	
+}
+
+.navbar-collapse {
+	color: aliceblue;
+}
+/* QR code generator */
+#qrCode {
+	margin: 15px;
+	
+}
+
+
+

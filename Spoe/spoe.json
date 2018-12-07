@@ -1,0 +1,72 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "appService_SPOE_name": {
+      "type": "string"
+    },
+    "appServicePlan_Spoe20181205051540Plan_location": {
+      "type": "string"
+    },
+    "appServicePlan_Spoe20181205051540Plan_name": {
+      "type": "string"
+    },
+    "appServicePlan_Spoe20181205051540Plan_resourceGroup": {
+      "type": "string"
+    },
+    "appServicePlan_Spoe20181205051540Plan_skuName": {
+      "type": "string"
+    },
+    "appServicePlan_Spoe20181205051540Plan_skuTier": {
+      "type": "string"
+    },
+    "appServicePlan_Spoe20181205051540Plan_skuFamily": {
+      "type": "string"
+    },
+    "appServicePlan_Spoe20181205051540Plan_skuSize": {
+      "type": "string"
+    },
+    "appServicePlan_Spoe20181205051540Plan_workerSizeId": {
+      "type": "int"
+    }
+  },
+  "resources": [
+    {
+      "location": "[parameters('appServicePlan_Spoe20181205051540Plan_location')]",
+      "name": "[parameters('appService_SPOE_name')]",
+      "type": "Microsoft.Web/sites",
+      "apiVersion": "2015-08-01",
+      "tags": {
+        "[concat('hidden-related:', resourceId(parameters('appServicePlan_Spoe20181205051540Plan_resourceGroup'),'Microsoft.Web/serverfarms', parameters('appServicePlan_Spoe20181205051540Plan_name')))]": "empty"
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.Web/serverFarms', parameters('appServicePlan_Spoe20181205051540Plan_name'))]"
+      ],
+      "kind": "app",
+      "properties": {
+        "name": "[parameters('appService_SPOE_name')]",
+        "serverFarmId": "[resourceId(parameters('appServicePlan_Spoe20181205051540Plan_resourceGroup'),'Microsoft.Web/serverfarms', parameters('appServicePlan_Spoe20181205051540Plan_name'))]",
+        "kind": "app",
+        "httpsOnly": true
+      },
+      "identity": {
+        "type": "SystemAssigned"
+      }
+    },
+    {
+      "location": "[parameters('appServicePlan_Spoe20181205051540Plan_location')]",
+      "name": "[parameters('appServicePlan_Spoe20181205051540Plan_name')]",
+      "type": "Microsoft.Web/serverfarms",
+      "apiVersion": "2015-08-01",
+      "sku": {
+        "name": "[parameters('appServicePlan_Spoe20181205051540Plan_skuName')]",
+        "tier": "[parameters('appServicePlan_Spoe20181205051540Plan_skuTier')]",
+        "family": "[parameters('appServicePlan_Spoe20181205051540Plan_skuFamily')]",
+        "size": "[parameters('appServicePlan_Spoe20181205051540Plan_skuSize')]"
+      },
+      "properties": {
+        "name": "[parameters('appServicePlan_Spoe20181205051540Plan_name')]"
+      }
+    }
+  ]
+}
